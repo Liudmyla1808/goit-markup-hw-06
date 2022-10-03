@@ -678,11 +678,9 @@ color: var(--tres-text);
     border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
-.modal-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.modal-icon:hover{
+    fill: var(--accent-color);
+
 }
 .backdrop.is-hidden{
     opacity: 0;
@@ -720,7 +718,9 @@ button{
     cursor: pointer;
 }
 /* HOME WORK 6 */
-
+.rozsulka{
+    margin-left: 93px;
+}
 .fotter-send{
 font-weight: 700;
 font-size: 14px;
@@ -729,7 +729,7 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--tres-text);
 margin-bottom: 20px;
-margin-left: 93px;
+/* margin-left: 93px; */
 }
 .button-pidpus{
     display: flex;
@@ -754,17 +754,16 @@ margin-left: 93px;
 .fotter-forma{
     display: flex;
    align-items: center; 
-
-
+   /* margin-left: 93px; */
 }
 .icon-strilka{
     margin-left: 10px; 
     
 }
-.fotter-label{
+/* .fotter-label{
     margin-left: 93px;
 
-}
+} */
 .input-pidpus{
     width: 358px;
     height: 50px;
@@ -773,6 +772,8 @@ margin-left: 93px;
     border-radius: 4px;
     padding-left: 16px;
     background: #2F303A;
+    color: var(--tres-text);
+    font-size:16px;
 }
 .modal-title{
     padding-bottom: 12px;
@@ -791,9 +792,7 @@ color: var(--title-text-color)
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    
     letter-spacing: 0.06em;
-    /* padding: 10px 52px; */
     color: var(--tres-text);
     width: 200px;
     height: 50px;
@@ -826,6 +825,8 @@ color: var(--title-text-color)
     
 } 
 .form-textaria{
+    width: 448px;
+    height: 138px;
     padding-left: 16px;
     padding-top: 12px;
     font: inherit;
@@ -869,6 +870,8 @@ color: var(--title-text-color)
 
 .acept-check{
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15px;
     height: 15px;
     border-radius: 2px;
