@@ -1,11 +1,65 @@
-<form>
-    <label>
-      Email
-      <input type="email" name="email" placeholder="example@mail.com">
-    </label>
-    <label>
-      Feedback
-      <textarea name="feedback" rows="5" placeholder="Type your message here..."></textarea>
-    </label>
-    <button type="submit">Submit</button>
-  </form>
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebStudio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+<form class="modal-form">
+  <div class="form-field">
+      <label for="name" class="form-label">Ім"я</label>
+      <div class="input-wrap">
+         
+         <input type="text" class="form-input" name="name" id="name" />
+         <svg  width="18" height="18" class="icon-person">
+            <use href="./images/sprite-vikno.svg#icon-person">
+            </use>
+          </svg>
+      </div>
+  </div>
+  <div class="form-field">
+      <label for="user_tel" class="form-label">Телефон</label>
+      <div class="input-wrap">
+          <input type="tel" class="form-input" name="tel" id="user_tel" />
+          <svg  width="18" height="18" class="icon-person">
+             <use href="./images/sprite-vikno.svg#icon-phone">
+             </use>
+          </svg>
+      
+      </div>
+  </div>
+  <div class="form-field">
+          <label for="user_email" class="form-label">Пошта</label>
+          <div class="input-wrap">
+
+             <input type="email" class="form-input" name="email" id="user_email" />
+             <svg  width="18" height="18" class="icon-person">
+                 <use href="./images/sprite-vikno.svg#icon-email">
+                 </use>
+              </svg>
+          </div>
+  </div>
+  <div class="form-field">
+      <label class="form-label"> Коментар</label>
+          <textarea name="feedback" rows="5" placeholder="Введіть текст" class="form-textaria"></textarea>
+        
+  </div>
+  <div class="acept">
+      <input type="checkbox" id="accept" name="accept" required class="visually-hidden">
+      
+      <div class="acept-check">
+          <svg  width="16" height="15" class="icon-person">
+              <use href="./images/sprite-vikno.svg#icon-Vector">
+              </use>
+           </svg>
+
+      </div>
+      <label for="accept" class="accept-label"> Погоджуюся з розсилкою та приймаю <a href="" class="dogovir">Умови договору</a></label>
+  
+  </div>
+  <button class="but-mod">Відправити</button>
+</form>
